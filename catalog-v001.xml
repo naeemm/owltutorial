@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1452431617727" name="MGEDOntology.owl" uri="MGEDOntology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1452431617727" name="amino-acid.owl" uri="amino-acid.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1452431617727" name="pizza.owl" uri="pizza.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1452431617727" name="file:/home/mnaeem/workspace/owltutorial/onto1.owl" uri="onto1.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1452431617727" name="file:people.owl" uri="people.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1452431617727" name="http://mged.sourceforge.net/ontologies/MGEDOntology.owl" uri="ontologies/MGEDOntology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1452431617727" name="http://purl.org/spar/scoro/" uri="ontologies/scoro.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1452431617727" name="http://rs.tdwg.org/dwc/terms/" uri="ontologies/dwcterms_v2011-10-26.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1452431617727" name="http://www.co-ode.org/ontologies/amino-acid/2005/10/11/amino-acid.owl" uri="ontologies/amino-acid.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1452431617727" name="http://www.co-ode.org/ontologies/pizza/pizza.owl" uri="ingedients_hierarchy.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1452431617727" name="http://www.mygrid.org.uk/ontology/JERMOntology" uri="ontologies/JERM.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1452431617727" name="http://www.semanticweb.org/root/ontologies/2015/11/untitled-ontology-11" uri="ctp.owl"/>
+    </group>
+</catalog>

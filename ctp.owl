@@ -1,0 +1,520 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/root/ontologies/2015/11/untitled-ontology-11"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/root/ontologies/2015/11/untitled-ontology-11">
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Declaration>
+        <Class IRI="#Adapter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Assembly"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Boss"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Components"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Elbow"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Float"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Quotation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sleeve"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Specifications"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Straight"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Supplier"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tee"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Threaded"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tube"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#adaptor.angle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#annual.usage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#base.diameter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#base.type"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#bend.radius"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#blind.hole"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#bolt.pattern.long"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#bolt.pattern.wide"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#bracket.pricing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#componenet.type"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#component.type"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#connection.type"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#corresponding.shell"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cost"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#coupling.class"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#diameter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#drop.length"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#elbow.angle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#end.a"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#end.a.1x"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#end.a.2x"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#end.form"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#end.x"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#end.x.1x"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#end.x.2x"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#extension.length"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#groove"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#height.over.tube"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#hex.nut.size"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#hex.size"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#hose.diameter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#intended.nut.pitch"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#intended.nut.thread"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#length"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#material"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#min.order.quantity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#mj.class.code"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#mj.plug.class.code"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#nominal.size"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#num.bends"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#num.boss"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#num.bracket"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#orientation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#other"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#outside.shape"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#overall.length"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#plating"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#quantity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#quote.date"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#seat.angle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#should.diameter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#thickness"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#thread.pitch"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#thread.size"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#type"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#unique.feature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#wall"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#weight"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Adapter"/>
+        <Class IRI="#Components"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Assembly"/>
+        <Class IRI="#Tube"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Boss"/>
+        <Class IRI="#Components"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Components"/>
+        <Class IRI="#Tube"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Elbow"/>
+        <Class IRI="#Components"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Float"/>
+        <Class IRI="#Components"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sleeve"/>
+        <Class IRI="#Components"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Specifications"/>
+        <Class IRI="#Tube"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Straight"/>
+        <Class IRI="#Components"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tee"/>
+        <Class IRI="#Components"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Threaded"/>
+        <Class IRI="#Components"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#adaptor.angle"/>
+        <Class IRI="#Specifications"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#annual.usage"/>
+        <Class IRI="#Quotation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#base.diameter"/>
+        <Class IRI="#Specifications"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#base.type"/>
+        <Class IRI="#Specifications"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#bend.radius"/>
+        <Class IRI="#Assembly"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#blind.hole"/>
+        <Class IRI="#Specifications"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#bolt.pattern.long"/>
+        <Class IRI="#Specifications"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#bolt.pattern.wide"/>
+        <Class IRI="#Specifications"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#bracket.pricing"/>
+        <Class IRI="#Quotation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#componenet.type"/>
+        <Class IRI="#Specifications"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#component.type"/>
+        <Class IRI="#Specifications"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#connection.type"/>
+        <Class IRI="#Specifications"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#corresponding.shell"/>
+        <Class IRI="#Specifications"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cost"/>
+        <Class IRI="#Quotation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#coupling.class"/>
+        <Class IRI="#Specifications"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#diameter"/>
+        <Class IRI="#Specifications"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#drop.length"/>
+        <Class IRI="#Specifications"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#elbow.angle"/>
+        <Class IRI="#Specifications"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#end.a"/>
+        <Class IRI="#Assembly"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#end.a.1x"/>
+        <Class IRI="#Assembly"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#end.a.2x"/>
+        <Class IRI="#Assembly"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#end.form"/>
+        <Class IRI="#Specifications"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#end.x"/>
+        <Class IRI="#Assembly"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#end.x.1x"/>
+        <Class IRI="#Assembly"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#end.x.2x"/>
+        <Class IRI="#Assembly"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#extension.length"/>
+        <Class IRI="#Specifications"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#groove"/>
+        <Class IRI="#Specifications"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#height.over.tube"/>
+        <Class IRI="#Specifications"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#hex.nut.size"/>
+        <Class IRI="#Specifications"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#hex.size"/>
+        <Class IRI="#Specifications"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#hose.diameter"/>
+        <Class IRI="#Specifications"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#intended.nut.pitch"/>
+        <Class IRI="#Specifications"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#intended.nut.thread"/>
+        <Class IRI="#Specifications"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#length"/>
+        <Class IRI="#Specifications"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#material"/>
+        <Class IRI="#Specifications"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#min.order.quantity"/>
+        <Class IRI="#Quotation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#mj.class.code"/>
+        <Class IRI="#Specifications"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#mj.plug.class.code"/>
+        <Class IRI="#Specifications"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#nominal.size"/>
+        <Class IRI="#Specifications"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#num.bends"/>
+        <Class IRI="#Assembly"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#num.boss"/>
+        <Class IRI="#Assembly"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#num.bracket"/>
+        <Class IRI="#Assembly"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#orientation"/>
+        <Class IRI="#Specifications"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#other"/>
+        <Class IRI="#Assembly"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#outside.shape"/>
+        <Class IRI="#Specifications"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#overall.length"/>
+        <Class IRI="#Specifications"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#plating"/>
+        <Class IRI="#Specifications"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#quantity"/>
+        <Class IRI="#Quotation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#quote.date"/>
+        <Class IRI="#Quotation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#seat.angle"/>
+        <Class IRI="#Specifications"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#should.diameter"/>
+        <Class IRI="#Specifications"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#thickness"/>
+        <Class IRI="#Specifications"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#thread.pitch"/>
+        <Class IRI="#Specifications"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#thread.size"/>
+        <Class IRI="#Specifications"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#type"/>
+        <Class IRI="#Specifications"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#unique.feature"/>
+        <Class IRI="#Specifications"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#wall"/>
+        <Class IRI="#Assembly"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#weight"/>
+        <Class IRI="#Specifications"/>
+    </SubClassOf>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
+

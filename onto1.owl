@@ -1,0 +1,251 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="file:/home/mnaeem/workspace/owltutorial/onto1.owl#"
+     xml:base="file:/home/mnaeem/workspace/owltutorial/onto1.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:p1="#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="file:/home/mnaeem/workspace/owltutorial/onto1.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- #drawsQuotation -->
+
+    <owl:ObjectProperty rdf:about="#drawsQuotation">
+        <rdfs:range rdf:resource="file:/home/mnaeem/workspace/owltutorial/onto1.owl#Quotation"/>
+        <rdfs:domain rdf:resource="file:/home/mnaeem/workspace/owltutorial/onto1.owl#Tube"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- #hasQuotation -->
+
+    <owl:ObjectProperty rdf:about="#hasQuotation">
+        <owl:inverseOf rdf:resource="#drawsQuotation"/>
+        <rdfs:domain rdf:resource="file:/home/mnaeem/workspace/owltutorial/onto1.owl#Quotation"/>
+        <rdfs:range rdf:resource="file:/home/mnaeem/workspace/owltutorial/onto1.owl#Tube"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- #propA -->
+
+    <owl:ObjectProperty rdf:about="#propA"/>
+    
+
+
+    <!-- #propB -->
+
+    <owl:ObjectProperty rdf:about="#propB"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- hasAge -->
+
+    <owl:DatatypeProperty rdf:about="hasAge">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- hasRange -->
+
+    <owl:DatatypeProperty rdf:about="hasRange"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- file:/home/mnaeem/workspace/owltutorial/onto1.owl#Adult -->
+
+    <owl:Class rdf:about="file:/home/mnaeem/workspace/owltutorial/onto1.owl#Adult">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="hasAge"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/mnaeem/workspace/owltutorial/onto1.owl#Quotation -->
+
+    <owl:Class rdf:about="file:/home/mnaeem/workspace/owltutorial/onto1.owl#Quotation">
+        <rdfs:subClassOf rdf:resource="file:/home/mnaeem/workspace/owltutorial/onto1.owl#Supplier"/>
+    </owl:Class>
+    
+
+
+    <!-- file:/home/mnaeem/workspace/owltutorial/onto1.owl#Supplier -->
+
+    <owl:Class rdf:about="file:/home/mnaeem/workspace/owltutorial/onto1.owl#Supplier"/>
+    
+
+
+    <!-- file:/home/mnaeem/workspace/owltutorial/onto1.owl#Tube -->
+
+    <owl:Class rdf:about="file:/home/mnaeem/workspace/owltutorial/onto1.owl#Tube"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- #Sup1 -->
+
+    <owl:NamedIndividual rdf:about="#Sup1">
+        <p1:hasQuotation rdf:resource="#Sup2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- #Sup2 -->
+
+    <owl:NamedIndividual rdf:about="#Sup2">
+        <p1:hasQuotation rdf:resource="#Sup1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="#x">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="#propA"/>
+                        <swrl:argument1 rdf:resource="#x"/>
+                        <swrl:argument2 rdf:resource="#x"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:head>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="#propB"/>
+                                <swrl:argument2 rdf:resource="#x"/>
+                                <swrl:argument1 rdf:resource="#x"/>
+                            </rdf:Description>
+                        </rdf:first>
+                    </rdf:Description>
+                </rdf:rest>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="#propA"/>
+                        <swrl:argument1 rdf:resource="#x"/>
+                        <swrl:argument2 rdf:resource="#x"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:body>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:argument1 rdf:resource="#x"/>
+                        <swrl:classPredicate rdf:resource="file:/home/mnaeem/workspace/owltutorial/onto1.owl#Supplier"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:head>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:argument1 rdf:resource="#x"/>
+                        <swrl:classPredicate rdf:resource="file:/home/mnaeem/workspace/owltutorial/onto1.owl#Quotation"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:body>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.3-SNAPSHOT) http://owlapi.sourceforge.net -->
+

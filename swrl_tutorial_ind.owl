@@ -1,0 +1,25 @@
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(swrlb:=<http://www.w3.org/2003/11/swrlb#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(var:=<urn:swrl#>)
+Prefix(:=<swrl_tutorial_ind.owl#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+Prefix(my:=<urn:makub:builtIn#>)
+
+Ontology(<swrl_tutorial_ind.owl>
+
+Declaration(Class(:Person))
+Declaration(DataProperty(:hasIRIprefix))
+Declaration(DataProperty(:hasIRIid))
+
+Declaration(NamedIndividual(:Martin))
+ClassAssertion(:Person :Martin)
+
+DLSafeRule(Body(ClassAtom(:Person Variable(var:p)) BuiltInAtom(my:IRIparts Variable(var:p) "#"^^xsd:string Variable(var:q) Variable(var:r) ) )Head( 
+ DataPropertyAtom(:hasIRIprefix Variable(var:p) Variable(var:q) ) 
+ DataPropertyAtom(:hasIRIid Variable(var:p) Variable(var:r) ) 
+ ))
+
+)
